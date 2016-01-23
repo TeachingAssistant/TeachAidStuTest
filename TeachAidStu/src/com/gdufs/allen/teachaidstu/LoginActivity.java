@@ -10,7 +10,7 @@ import android.widget.Button;
 /**
  * @author Allen Lin
  * @date 2016-1-22
- * @desc
+ * @desc 登录界面
  */
 public class LoginActivity extends Activity {
 
