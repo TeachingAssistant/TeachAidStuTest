@@ -4,6 +4,11 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo.State;
 
+/**
+ * @author Allen Lin
+ * @date 2016-1-21
+ * @desc
+ */
 public class NetworkUtil {
 
 	public final static int NONE = 0;
