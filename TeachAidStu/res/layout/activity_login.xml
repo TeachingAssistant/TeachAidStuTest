@@ -88,7 +88,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/btn_login_selector"
+        android:background="@drawable/btn_login_sl"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
         android:text="登录"

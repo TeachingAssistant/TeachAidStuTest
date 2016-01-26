@@ -23,8 +23,8 @@ public class MainActivity extends FragmentActivity {
 	private Class mFragmentArray[] = { HomeFragment.class, OwnerFragment.class,
 			TeachFragment.class };
 	/** 存放图片数组 */
-	private int mImageArray[] = { R.drawable.tab_home_seclector,
-			R.drawable.ic_launcher, R.drawable.ic_launcher };
+	private int mImageArray[] = { R.drawable.tab_home_sl,
+			R.drawable.tab_teach_sl, R.drawable.tab_owner_sl };
 	/** 选项卡文字 */
 	private String mTextArray[] = { "首页", "我的教辅", "个人中心" };
 
