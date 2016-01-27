@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gdufs.allen.teachaidteach"
+    package="com.gdufs.allen.teachaidtch"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar" >
         <activity
-            android:name="com.gdufs.allen.teachaidteach.AppStartActivity"
+            android:name="com.gdufs.allen.teachaidtch.AppStartActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
             <intent-filter>
@@ -27,11 +27,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.gdufs.allen.teachaidteach.LoginActivity"
+            android:name="com.gdufs.allen.teachaidtch.LoginActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.gdufs.allen.teachaidteach.MainActivity"
+            android:name="com.gdufs.allen.teachaidtch.MainActivity"
             android:label="@string/app_name" >
         </activity>
     </application>
