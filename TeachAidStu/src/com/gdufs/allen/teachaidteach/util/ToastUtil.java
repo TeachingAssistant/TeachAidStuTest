@@ -1,4 +1,4 @@
-package com.gdufs.allen.teachaidstu.util;
+package com.gdufs.allen.teachaidteach.util;
 
 import android.content.Context;
 import android.widget.Toast;

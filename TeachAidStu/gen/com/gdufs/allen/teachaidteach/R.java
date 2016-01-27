@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.gdufs.allen.teachaidstu;
+package com.gdufs.allen.teachaidteach;
 
 public final class R {
     public static final class array {

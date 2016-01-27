@@ -1,8 +1,9 @@
-package com.gdufs.allen.teachaidstu;
+package com.gdufs.allen.teachaidteach;
 
 import com.gdufs.allen.fragment.HomeFragment;
 import com.gdufs.allen.fragment.OwnerFragment;
 import com.gdufs.allen.fragment.TeachFragment;
+import com.gdufs.allen.teachaidteach.R;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;

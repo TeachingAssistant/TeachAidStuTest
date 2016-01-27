@@ -1,8 +1,7 @@
-package com.gdufs.allen.teachaidstu;
+package com.gdufs.allen.teachaidteach;
 
-import com.gdufs.allen.teachaidstu.R;
-import com.gdufs.allen.teachaidstu.R.layout;
-import com.gdufs.allen.teachaidstu.util.ToastUtil;
+import com.gdufs.allen.teachaidteach.R;
+import com.gdufs.allen.teachaidteach.util.ToastUtil;
 
 import android.app.Activity;
 import android.content.Intent;
