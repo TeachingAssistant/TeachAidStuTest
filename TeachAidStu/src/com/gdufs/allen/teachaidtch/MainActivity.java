@@ -3,14 +3,17 @@ package com.gdufs.allen.teachaidtch;
 import com.gdufs.allen.teachaidtch.fragment.HomeFragment;
 import com.gdufs.allen.teachaidtch.fragment.OwnerFragment;
 import com.gdufs.allen.teachaidtch.fragment.TeachFragment;
+import com.gdufs.allen.teachaidtch.util.ToastUtil;
 import com.gdufs.allen.teachaidtch.R;
 
+import android.R.id;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TextView;
 import android.widget.TabHost.TabSpec;
 
@@ -19,15 +22,19 @@ import android.widget.TabHost.TabSpec;
  * @date 2016-1-26
  * @desc app主界面
  */
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends FragmentActivity implements
+		OnTabChangeListener {
 	private FragmentTabHost mTabHost;
 	/** 选项卡文字数组 */
-	public String[] mTabTextArray;
+	private String[] mTabTextArray;
+
 	private Class mFragmentArray[] = { HomeFragment.class, OwnerFragment.class,
 			TeachFragment.class };
 	/** 存放图片数组 */
 	private int mImageArray[] = { R.drawable.tab_home_sl,
 			R.drawable.tab_teach_sl, R.drawable.tab_owner_sl };
+
+	private TextView mTextViewTitle;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -41,9 +48,17 @@ public class MainActivity extends FragmentActivity {
 	 * 初始化组件
 	 */
 	private void initView() {
+
+		mTextViewTitle = (TextView) findViewById(R.id.tv_title);
+		initTabHost();
+	}
+
+	private void initTabHost() {
 		// 找到TabHost
+
 		mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
 		mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
+		mTabHost.setOnTabChangedListener(this);
 		// 得到fragment的个数
 
 		int count = mFragmentArray.length;
@@ -72,5 +87,10 @@ public class MainActivity extends FragmentActivity {
 		textView.setText(mTabTextArray[index]);
 
 		return view;
+	}
+
+	@Override
+	public void onTabChanged(String tabId) {
+		mTextViewTitle.setText(tabId);
 	}
 }
