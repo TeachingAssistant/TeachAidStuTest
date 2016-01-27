@@ -10,7 +10,7 @@ import com.gdufs.allen.teachaidstu.R;
 /**
  * @author Allen Lin
  * @date 2016-1-26
- * @desc
+ * @desc 主页
  */
 public class HomeFragment extends Fragment {
 
@@ -18,7 +18,7 @@ public class HomeFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		return inflater.inflate(R.layout.fragment1, null);
+		return inflater.inflate(R.layout.fragment_home, null);
 	}
 
 }

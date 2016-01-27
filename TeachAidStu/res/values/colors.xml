@@ -3,5 +3,7 @@
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="maincl">#D95C3C</color>
+    <color name="touming">#b0ffffff</color>
 
 </resources>
