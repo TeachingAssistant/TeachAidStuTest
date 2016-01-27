@@ -7,7 +7,7 @@ import android.net.NetworkInfo.State;
 /**
  * @author Allen Lin
  * @date 2016-1-21
- * @desc
+ * @desc 检查网络是否连接
  */
 public class NetworkUtil {
 
