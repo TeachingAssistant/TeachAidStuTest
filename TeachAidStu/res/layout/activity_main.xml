@@ -16,7 +16,7 @@
         android:id="@android:id/tabhost"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/login_top_background" >
+        android:background="@drawable/bg_tab" >
 
         <FrameLayout
             android:id="@android:id/tabcontent"
