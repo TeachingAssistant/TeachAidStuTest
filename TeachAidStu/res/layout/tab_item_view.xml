@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:text="测试"
         android:textColor="@color/black"
-        android:textSize="10sp" >
+        android:textSize="12sp" >
     </TextView>
 
 </LinearLayout>
