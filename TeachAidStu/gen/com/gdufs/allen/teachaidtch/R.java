@@ -33,34 +33,42 @@ public final class R {
     public static final class drawable {
         public static final int bg_login=0x7f020000;
         public static final int bg_tab=0x7f020001;
-        public static final int bg_tab_home_normal=0x7f020002;
-        public static final int bg_tab_home_press=0x7f020003;
-        public static final int bg_tab_owner_normal=0x7f020004;
-        public static final int bg_tab_owner_press=0x7f020005;
-        public static final int bg_tab_teach_normal=0x7f020006;
-        public static final int bg_tab_teach_press=0x7f020007;
-        public static final int bg_welcome=0x7f020008;
-        public static final int btn_login_sl=0x7f020009;
-        public static final int ic_launcher=0x7f02000a;
-        public static final int login_bottom_background=0x7f02000b;
-        public static final int login_management_signinbutton_background=0x7f02000c;
-        public static final int login_management_signinbutton_background_highlighted=0x7f02000d;
-        public static final int login_top_background=0x7f02000e;
-        public static final int logo_login=0x7f02000f;
-        public static final int tab_bg_sl=0x7f020010;
-        public static final int tab_home_sl=0x7f020011;
-        public static final int tab_owner_sl=0x7f020012;
-        public static final int tab_teach_sl=0x7f020013;
+        public static final int bg_tab2=0x7f020002;
+        public static final int bg_tab_home_normal=0x7f020003;
+        public static final int bg_tab_home_press=0x7f020004;
+        public static final int bg_tab_owner_normal=0x7f020005;
+        public static final int bg_tab_owner_press=0x7f020006;
+        public static final int bg_tab_teach_normal=0x7f020007;
+        public static final int bg_tab_teach_press=0x7f020008;
+        public static final int bg_welcome=0x7f020009;
+        public static final int btn_login_sl=0x7f02000a;
+        public static final int down_line=0x7f02000b;
+        public static final int ic_launcher=0x7f02000c;
+        public static final int login_bottom_background=0x7f02000d;
+        public static final int login_management_signinbutton_background=0x7f02000e;
+        public static final int login_management_signinbutton_background_highlighted=0x7f02000f;
+        public static final int login_top_background=0x7f020010;
+        public static final int logo_login=0x7f020011;
+        public static final int tab_bg_sl=0x7f020012;
+        public static final int tab_home_sl=0x7f020013;
+        public static final int tab_owner_sl=0x7f020014;
+        public static final int tab_teach_sl=0x7f020015;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0007;
+        public static final int action_settings=0x7f0a000d;
         public static final int bt_login=0x7f0a0002;
-        public static final int imageview=0x7f0a0005;
+        public static final int down_line=0x7f0a000c;
+        public static final int imageview=0x7f0a0006;
         public static final int linear1=0x7f0a0001;
         public static final int login_logo=0x7f0a0000;
         public static final int realtabcontent=0x7f0a0003;
-        public static final int textview=0x7f0a0006;
-        public static final int tv_title=0x7f0a0004;
+        public static final int textview=0x7f0a0007;
+        public static final int tv_tab_data=0x7f0a000b;
+        public static final int tv_tab_dianming=0x7f0a0008;
+        public static final int tv_tab_hw=0x7f0a000a;
+        public static final int tv_tab_tiwen=0x7f0a0009;
+        public static final int tv_title=0x7f0a0005;
+        public static final int viewpager=0x7f0a0004;
     }
     public static final class layout {
         public static final int activity_app_start=0x7f030000;
@@ -68,9 +76,11 @@ public final class R {
         public static final int activity_main=0x7f030002;
         public static final int fragment_home=0x7f030003;
         public static final int fragment_owner=0x7f030004;
-        public static final int fragment_teach=0x7f030005;
-        public static final int main_head=0x7f030006;
-        public static final int tab_item_view=0x7f030007;
+        public static final int fragment_rollcall=0x7f030005;
+        public static final int fragment_teach=0x7f030006;
+        public static final int main_head=0x7f030007;
+        public static final int tab_item_view=0x7f030008;
+        public static final int top_tab=0x7f030009;
     }
     public static final class menu {
         public static final int main=0x7f090000;

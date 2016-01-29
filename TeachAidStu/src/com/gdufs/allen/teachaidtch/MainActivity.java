@@ -3,6 +3,7 @@ package com.gdufs.allen.teachaidtch;
 import com.gdufs.allen.teachaidtch.fragment.HomeFragment;
 import com.gdufs.allen.teachaidtch.fragment.OwnerFragment;
 import com.gdufs.allen.teachaidtch.fragment.TeachFragment;
+import com.gdufs.allen.teachaidtch.util.LogUtil;
 import com.gdufs.allen.teachaidtch.util.ToastUtil;
 import com.gdufs.allen.teachaidtch.R;
 
@@ -28,8 +29,8 @@ public class MainActivity extends FragmentActivity implements
 	/** 选项卡文字数组 */
 	private String[] mTabTextArray;
 
-	private Class mFragmentArray[] = { HomeFragment.class, OwnerFragment.class,
-			TeachFragment.class };
+	private Class mFragmentArray[] = { HomeFragment.class, TeachFragment.class,
+			OwnerFragment.class };
 	/** 存放图片数组 */
 	private int mImageArray[] = { R.drawable.tab_home_sl,
 			R.drawable.tab_teach_sl, R.drawable.tab_owner_sl };
@@ -40,8 +41,9 @@ public class MainActivity extends FragmentActivity implements
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		// 从XML获取 选项卡文字
-		mTabTextArray = this.getResources().getStringArray(R.array.tab_text);
+		mTabTextArray = this.getResources().getStringArray(R.array.tab_text);LogUtil.d("initViewPager ok");
 		initView();
+		LogUtil.d("onCreate ok");
 	}
 
 	/**
