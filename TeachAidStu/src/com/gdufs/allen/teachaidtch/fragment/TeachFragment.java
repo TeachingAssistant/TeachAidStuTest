@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 
 import com.gdufs.allen.teachaidtch.R;
+import com.gdufs.allen.teachaidtch.util.BaseTools;
 import com.gdufs.allen.teachaidtch.util.LogUtil;
 
 /**
@@ -43,7 +44,10 @@ public class TeachFragment extends Fragment {
 
 		View v = inflater.inflate(R.layout.fragment_teach, null);
 		viewPager = (ViewPager) v.findViewById(R.id.viewpager);
+
 		down_line = (ImageView) v.findViewById(R.id.down_line);
+		screen1_4 = BaseTools.getWindowsWidth(getActivity()) / 4; // 屏幕宽度的四分之一
+		offset = (screen1_4 - down_line.getLayoutParams().width) / 2;// 计算down_line偏移量
 		lp = (LayoutParams) down_line.getLayoutParams();
 		initViewPager();
 		return v;
@@ -65,8 +69,8 @@ public class TeachFragment extends Fragment {
 		fragmentsList.add(mHomeworkFragment);
 		fragmentsList.add(mDataFragment);
 
-		viewPager.setAdapter(new FragmentAdapter(getActivity()
-				.getSupportFragmentManager(), fragmentsList));
+		viewPager.setAdapter(new FragmentAdapter(getChildFragmentManager(),
+				fragmentsList));
 
 		viewPager.setCurrentItem(0);
 		viewPager.setOnPageChangeListener(new OnPageChangeListener() {
