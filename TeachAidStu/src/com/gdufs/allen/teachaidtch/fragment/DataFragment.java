@@ -10,7 +10,7 @@ import com.gdufs.allen.teachaidtch.R;
 /**
  * @author Allen Lin
  * @date 2016-1-26
- * @desc 主页
+ * @desc 资料
  */
 public class DataFragment extends Fragment {
 

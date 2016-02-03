@@ -10,7 +10,7 @@ import com.gdufs.allen.teachaidtch.R;
 /**
  * @author Allen Lin
  * @date 2016-1-26
- * @desc 主页
+ * @desc 提问
  */
 public class AskFragment extends Fragment {
 
